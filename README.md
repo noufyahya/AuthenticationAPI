@@ -30,8 +30,10 @@ when you take the login token given and put it in the headers field, it will sho
 
 ![Screen Shot 2020-09-23 at 8 08 08 PM](https://user-images.githubusercontent.com/38424188/94144521-47154000-fe82-11ea-8608-73cd8b1f9c37.png)
 
+If,however, the token wasn't in the header, therfore the server wasn't sure if the person who logged in was the same person who registered, the access will be denied.
+![Screen Shot 2020-09-23 at 8 06 26 PM](https://user-images.githubusercontent.com/38424188/94166691-b009b180-fe9c-11ea-878f-537729253843.png)
 
-we also made some code to **hash your password**, as you can see it became understandable gibberish in the collection db -so even staff cant see it- using 
+We also made some code to **hash your password**, as you can see it became closer to gibberish in the collection db -so even  the staff cant decode it- using 
 bcrypt. 
 
 ```
