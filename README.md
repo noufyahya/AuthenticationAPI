@@ -30,3 +30,13 @@ when you take the login token given and put it in the headers field, it will sho
 
 ![Screen Shot 2020-09-23 at 8 08 08 PM](https://user-images.githubusercontent.com/38424188/94144521-47154000-fe82-11ea-8608-73cd8b1f9c37.png)
 
+
+we also made some code to **hash your password**, as you can see it became understandable gibberish in the collection db -so even staff cant see it- using 
+bcrypt. 
+
+```
+  const salt = await bcrypt.genSalt(10);
+  const hashedPassword = await bcrypt.hash(req.body.password, salt);
+```
+<img width="1044" alt="Screen Shot 2020-09-24 at 4 35 44 PM" src="https://user-images.githubusercontent.com/38424188/94145812-264dea00-fe84-11ea-9a66-a43595c5ce40.png">
+
